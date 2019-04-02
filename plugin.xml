@@ -33,8 +33,8 @@ SOFTWARE.
     <engines>
         <engine name="cordova" version=">=6.0.0" />
     </engines>
-    <repo>https://github.com/j3k0/cordova-plugin-openwith.git</repo>
-    <issue>https://github.com/j3k0/cordova-plugin-openwith/issues</issue>
+    <repo>https://github.com/neohelden/cordova-plugin-openwith.git</repo>
+    <issue>https://github.com/neohelden/cordova-plugin-openwith.git/issues</issue>
 
 	<license>MIT</license>
     <keywords>cordova,phonegap,openwith,ios,android</keywords>
@@ -75,8 +75,8 @@ SOFTWARE.
         </config-file>
 
         <hook type="before_plugin_install" src="hooks/npmInstall.js" />
-        <hook type="before_plugin_install" src="hooks/iosCopyShareExtension.js" />
-        <hook type="after_plugin_install" src="hooks/iosAddTarget.js" />
+        <hook type="after_platform_add" src="hooks/iosCopyShareExtension.js" />
+        <hook type="after_platform_add" src="hooks/iosAddTarget.js" />
         <hook type="before_plugin_uninstall" src="hooks/iosRemoveTarget.js" />
 
         <framework src="MobileCoreServices.framework" />
